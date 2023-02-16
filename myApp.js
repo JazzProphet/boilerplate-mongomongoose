@@ -10,9 +10,7 @@ let personSchema = new mongoose.Schema({
   favorviteFoods: [String]
 });
 
-module.exports = mongoose.model('Person', personSchema);
-
-let Person;
+let Person = mongoose.model("Person", personSchema);
 
 mongoose.connect(process.env.MONGO_URI);
 
