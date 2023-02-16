@@ -1,7 +1,7 @@
 require('dotenv').config();
 let mongoose = require('mongoose');
 
-let personSchema = new mongoose.personSchema({
+let personSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
