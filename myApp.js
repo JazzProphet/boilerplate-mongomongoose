@@ -1,5 +1,14 @@
 require('dotenv').config();
 let mongoose = require('mongoose');
+
+let personSchema = new mongoose.personSchema({
+  name: String [required],
+  age: Number,
+  favorviteFoods: [String]
+});
+
+module.exports = mongoose.model('Person', personSchema);
+
 let Person;
 
 mongoose.connect(process.env.MONGO_URI);
