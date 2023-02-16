@@ -2,7 +2,7 @@ require('dotenv').config();
 let mongoose = require('mongoose');
 let Person;
 
-mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://Kyle:Kylemongodbatlas0@freecodecampdb.ypywvbo.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
